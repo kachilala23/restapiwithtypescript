@@ -56,3 +56,22 @@ before control goes to our own request handlers.
 
 Updating package.json to Transpile TypeScript to JavaScript and Run the App
 
+REST API Services, Middleware, Controllers, and Models
+
+Services that make our code cleaner by encapsulating business logic operations into functions that middleware 
+and controllers can call. Middleware that will validate prerequisite conditions before Express.js calls the 
+appropriate controller function. Controllers that use services to process the request before finally sending
+a response to the requester. Models that describe our data and aid in compile-time checks.
+
+That one-letter difference between acronyms is essential: A DAO is responsible for connecting to a defined 
+database and performing CRUD operations;  a DTO is an object that holds the raw data that the DAO will send 
+to—and receive from—the database.
+
+
+npm i --save shortid
+npm i --save-dev @types/shortid
+
+
+npm i --save argon2 
+for password hashing
+
