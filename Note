@@ -49,3 +49,10 @@ data models matching a given database schema, to facilitate data storage and ret
 route configuration from the code that finally (after any middleware) processes a route request, calls the above service 
 functions if necessary, and gives a response to the client
 
+http is a Node.js-native module. It’s required to start our Express.js application.
+
+body-parser is middleware that comes with Express.js. It parses the request (in our case, as JSON) 
+before control goes to our own request handlers.
+
+Updating package.json to Transpile TypeScript to JavaScript and Run the App
+
