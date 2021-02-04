@@ -75,3 +75,64 @@ npm i --save-dev @types/shortid
 npm i --save argon2 
 for password hashing
 
+curl --location --request POST 'localhost:3000/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+   "email": "marcos.henrique@toptal.com",
+   "password": "sup3rS3cr3tPassw0rd!23"
+}'
+
+or postman in the raw and change to JSON
+
+{
+     "email": "kachi@kachi.com",
+     "password": "sup3rS3cr3tPassw0rd!24"
+}
+
+localhost:3000/users/BxChDCU6d   // for single request
+
+Update
+
+curl --location --request PUT "localhost:3000/users/$REST_API_EXAMPLE_ID" \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "kachi@kachi.com",
+    "password": "sup3rS3cr3tPassw0rd!24",
+    "firstName": "Onyekachi",
+    "lastName": "Stanley",
+    "permissionLevel": 8
+}'
+
+from postman   localhost:3000/users/HzzkVWgOa
+{
+    "email": "kachi@kachi.com",
+    "password": "sup3rS3cr3tPassw0rd!24",
+    "firstName": "Onyekachi",
+    "lastName": "Stanley",
+    "permissionLevel": 8
+}
+
+DELETE
+localhost:3000/users/HzzkVWgOa
+
+PATCH
+localhost:3000/users/HzzkVWgOa
+{
+    "lastName": "Stan"
+}
+
+PUT
+localhost:3000/users/HzzkVWgOa
+{
+    "email": "kachi@kachi.com",
+    "password": "sup3rS3cr3tPassw0rd!24",
+    "firstName": "Onyekachi",
+    "lastName": "Stanley",
+    "permissionLevel": 8
+}
+
+GET BY ID
+localhost:3000/users/HzzkVWgOa
+
+GET ALL USERS
+localhost:3000/users
